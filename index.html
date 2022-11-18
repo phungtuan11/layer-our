@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phimhay </title>
+    <style>
+      body {
+        padding: 0px;
+        margin:0px ;
+      }
+      #head {
+  width: 100%;
+  overflow: auto;
+}
+
+.logo {
+  width: 20%;
+  background-color: aquamarine;
+  float: left;
+  box-sizing: border-box;
+  padding: 29px;
+}
+
+.banner {
+  width: 80%;
+  background-color: aqua;
+  float: right;
+  box-sizing: border-box;
+  padding: 28px;
+  text-align: center;
+}
+
+#head-link {
+  background-color: blue;
+  padding: 10px;
+}
+
+.content::after {
+  content: '';
+  clear: both;
+  display: table;
+  box-sizing: border-box;
+}
+
+#left, #content, #right {
+  width: 15%;
+  float: left;
+  box-sizing: border-box;
+  padding: 150px 30px;
+  background-color: antiquewhite;
+}
+
+#content {
+  width: 70%;
+  background-color: aliceblue;
+  box-sizing: border-box;
+}
+
+#right {
+  background-color: wheat;
+  box-sizing: border-box;
+}
+
+footer {
+  padding: 30px;
+  background-color: brown;
+  box-sizing: border-box;
+}
+.danhsach{
+  list-style-type: none;
+  display: flex;
+  color: white ;
+  margin: 5px;
+}
+li{
+  margin: 10px;
+}
+    </style>
+</head>
+<body>
+  <div class="page">
+    
+    <header>
+        <div id="head">
+          <div class="logo">logo</div>
+          <div class="banner"> 
+            <label>tìm kiếm </label>
+            <input type="text"name="fname"> 
+          </div>
+        </div>
+        <div id="head-link"> 
+         <ul class="danhsach">
+          <li>trang chủ</li>
+          <li>thể loại</li>
+          <li>phim lẻ</li>
+          <li>phim rap</li>
+          <li>phim thuyết minh</li>
+
+         </ul>  
+        </div>
+  </header>
+  <section class="content">
+    <div id="left">left</div>
+    <div id="content">
+      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F754423375059135979%2F&psig=AOvVaw047vO5R3QH8UK7_y3_TMiE&ust=1668827195893000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIDg7PTftvsCFQAAAAAdAAAAABAT">
+    </div>
+    <div id="right">right</div>
+  </section>
+  <footer>footer</footer>
+</div>
+</body>
+</html>
