@@ -33,11 +33,11 @@
 }
 
 #head-link {
-  background-color: blue;
+  background-color: pink;
   padding: 10px;
 }
 
-.content::after {
+.content:after {
   content: '';
   clear: both;
   display: table;
@@ -54,18 +54,27 @@
 
 #content {
   width: 70%;
-  background-color: aliceblue;
+  background-color: ghostwhite;
   box-sizing: border-box;
+  padding: 20px;
+  border: 2px solid black;
+  border-width: 1px;
+  min-height:800px ;
+}
+.phim{
+  
 }
 
-#right {
+#left {
   background-color: wheat;
   box-sizing: border-box;
+  float: left;
+  min-height: 800px;
 }
 
 footer {
   padding: 30px;
-  background-color: brown;
+  background-color:rgba(169, 169, 169, 0.229);
   box-sizing: border-box;
 }
 .danhsach{
@@ -73,9 +82,30 @@ footer {
   display: flex;
   color: white ;
   margin: 5px;
+  
 }
 li{
   margin: 10px;
+  background-color: #4CAF50;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+img {
+ width: 10%;
+ border: 1px solid #cfd1d1;
+ 
+}
+.ghichu {
+  text-align: left;
+  width: 60%;
+
+
+}
+ .khu{
+  text-align: right;
+  
 }
     </style>
 </head>
@@ -92,23 +122,48 @@ li{
         </div>
         <div id="head-link"> 
          <ul class="danhsach">
-          <li>trang chủ</li>
-          <li>thể loại</li>
-          <li>phim lẻ</li>
-          <li>phim rap</li>
-          <li>phim thuyết minh</li>
-
-         </ul>  
+          <li><a href="trangchu.asp"> trangchu </a></li>
+          <li><a href="theloai.asp"> theloai </a></li>
+          <li><a href="phimle.asp"> phimle </a></li>
+          <li><a href="phimrap.asp"> phimrap </a></li>
+          <li><a href="phimthuyetminh.asp"> phimthuyetminh </a></li> 
+        </ul>  
         </div>
   </header>
   <section class="content">
     <div id="left">left</div>
     <div id="content">
-      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F754423375059135979%2F&psig=AOvVaw047vO5R3QH8UK7_y3_TMiE&ust=1668827195893000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIDg7PTftvsCFQAAAAAdAAAAABAT">
+      <div class="phim"></div>
+<div class="khuvuc">
+  <img src="https://i.pinimg.com/originals/4b/36/0e/4b360e21fea7315cbf767cebc13bb259.jpg">
+</div>
     </div>
-    <div id="right">right</div>
+    </a>
+    </div>
+   
   </section>
-  <footer>footer</footer>
+  <footer>
+   <div class="ghichu"> Xem phim hay miễn phí chất lượng cao với phụ đề tiếng việt - thuyết minh - lồng tiếng. Mọt phim có nhiều thể loại phim phong phú, đặc sắc, nhiều bộ phim hay nhất - mới nhất.
+
+    Website MọtPhimTV với giao diện trực quan, thuận tiện, tốc độ tải nhanh, với độ tin cậy cao hứa hẹn sẽ đem lại những trải nghiệm tốt nhất cho người dùng.
+  </div>
+  <div>
+  <table class="khu">
+    <tr>
+      <th>Quy định</th>
+     <th>Giới thiệu</th> 
+    </tr>
+    <tr>
+      <th>Điều khoản chung</th>
+      <th>Trang chủ</th>
+    </tr>
+  <tr>
+      <th>Chính sách riêng tư</th>
+      <th>Facebook </th>
+  </tr>
+</div>
+    </table>
+   </footer>
 </div>
 </body>
 </html>
